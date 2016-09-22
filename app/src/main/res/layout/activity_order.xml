@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_order"
     android:layout_width="match_parent"
@@ -8,10 +8,192 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="edu.orangecoastcollege.cs273.vnguyen629.inandout.OrderActivity">
+    tools:context="edu.orangecoastcollege.cs273.vnguyen629.inandout.OrderActivity"
+    android:background="@drawable/order_background"
+    android:columnCount="2"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:text="@string/instruction_text"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionTextView"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_columnSpan="2"
+        android:gravity="center"
+        android:layout_row="0" />
+
+    <TextView
+        android:text="@string/double_double_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doubleDoubleTextView"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/cheeseburger_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cheeseburgerTextView"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:textSize="18sp"
+        android:layout_gravity="right"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/cheeseburgerAmountEditText"
+        android:textSize="18sp"
+        android:gravity="left" />
+
+    <TextView
+        android:text="@string/french_fries_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frenchFriesTextView"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/shakes_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shakesTextView"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:textSize="18sp"
+        android:layout_gravity="right"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="257dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/shakesAmountEditText"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:inputType="number" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:id="@+id/drinksSizeTextView"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:layout_gravity="left"
+        android:text="@string/drinks_size_text"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/frenchFriesAmountEditText"
+        android:textSize="18sp"
+        android:gravity="left"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:inputType="number" />
+
+    <TextView
+        android:text="@string/small_drink_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/smallDrinkTextView"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:textSize="18sp"
+        android:layout_gravity="right"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textSize="18sp"
+        android:layout_gravity="left"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:id="@+id/smallDrinkAmountEditText" />
+
+    <TextView
+        android:text="@string/medium_drink_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediumDrinkTextView"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/mediumDrinkAmountEditText"
+        android:layout_gravity="left"
+        android:layout_row="7"
+        android:layout_column="1"
+        android:textSize="18sp"
+        android:inputType="number" />
+
+    <TextView
+        android:text="@string/large_drink_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/largeDrinkTextView"
+        android:textSize="18sp"
+        android:layout_gravity="right"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:text="@string/place_order_text"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeOrderButton"
+        android:layout_columnSpan="2"
+        android:layout_row="9"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/doubleDoubleAmountEditText"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textSize="18sp"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/largeDrinkAmountEditText"
+        android:layout_gravity="left"
+        android:layout_column="1"
+        android:layout_row="8"
+        android:textSize="18sp"
+        android:inputType="number" />
+
+</GridLayout>

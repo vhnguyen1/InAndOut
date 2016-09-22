@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">In And Out</string>
+    <string name="cheeseburger_text">Thịt băm có lẫn phô mai $2.15</string>
+    <string name="double_double_text">Kép Kép $3.60</string>
+    <string name="drinks_size_text">Thức uống đài phun nước (chọn kích thước)</string>
+    <string name="french_fries_text">Khoai tây chiên $1.65</string>
+    <string name="instruction_text">Đặt hàng</string>
+    <string name="items_ordered_text">Mục thứ tự:</string>
+    <string name="large_drink_text">Lớn $1.75</string>
+    <string name="medium_drink_text">Trung binh $1.55</string>
+    <string name="new_order_text">BẮT ĐẦU TỰ MỚI</string>
+    <string name="order_total_text">Đặt hàng Tổng số $</string>
+    <string name="place_order_text">Đặt hàng</string>
+    <string name="shakes_text">Sinh tố $2.20</string>
+    <string name="small_drink_text">Nhỏ $1.45</string>
+    <string name="subtotal_text">Tổng cộng: $</string>
+    <string name="tax_text">Thuế (8%): $</string>
+</resources>
